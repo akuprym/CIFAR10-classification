@@ -55,7 +55,7 @@ class DatasetConfig:
 
 @dataclass(frozen=True)
 class TrainingConfig:
-    EPOCHS: int = 3
+    EPOCHS: int = 31
     BATCH_SIZE: int = 256
     LEARNING_RATE: float = 0.001
 
