@@ -83,6 +83,7 @@ def cnn_model(input_shape=(32, 32, 3)):
 
     model.add(Flatten())
     model.add(Dense(512, activation='relu'))
+    model.add(Dropout(0.5))
     model.add(Dense(10, activation='softmax'))
 
     return model
